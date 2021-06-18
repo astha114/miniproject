@@ -179,32 +179,7 @@ def translate():
             out.writelines(text)
         
 
-        # import speech_recognition as sr
-        # from pydub import AudioSegment
-        # c = 0
-        # a = 0
-        # sound = AudioSegment.from_file(f'{filename}.wav')
-        # for i in range(0, len(sound), 10000):
-        #     if i == 0:
-        #         pass
-        #     else:
-        #         print(i)
-        #         c += 1
-        #         part = sound[a:i]
-        #         part.export(f'C:/Users/astha/PycharmProjects/miniproject/{filename}{c}.wav', format='wav')
-
-        #         file_name = f'C:/Users/astha/PycharmProjects/miniproject/{filename}{c}.wav'
-        #         r = sr.Recognizer()
-        #         a = i
-        #         with sr.AudioFile(file_name) as source:
-        #             # audio = r.record(source, offset=4, duration=3)
-        #             audio_data = r.record(source)
-        #             text = r.recognize_google(audio_data, language='en-IN')
-        #             f = open(f'{filename}.txt', 'a')
-        #             f.write(f'{text}\n')
-        #             print(text)
-                    # output1.insert(END,text)
-
+      
         def text_to_braille(inp):
             """This function converts text to braille symbols."""
             asciicodes = [' ', '!', '"', '#', '$', '%', '&', '', '(', ')', '*', '+', ',', '-', '.', '/',
